@@ -300,7 +300,7 @@
     "sceneContent": "Sahnanyň mazmuny:"
   },
   "roomDialog": {
-    "desc_intro": "Adamlary bilelikde işlemek üçin häzirki sahna çagyryp bilersiňiz.",
+    "desc_intro": "Bilelikde işlemek üçin kärdeşleriňizi häzirki sahna çagyryp bilersiňiz.",
     "desc_privacy": "Alada etmäň - seansda ahyrky şifrlemek ulanylýar. Çeken zatlaryňyzyň hemmesi gizlin bolar we hatda serwerimize-de elýeterli bolmaz.",
     "button_startSession": "Sessiýa başlamak",
     "button_stopSession": "Sessiýany tamamlamak",
