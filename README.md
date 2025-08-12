@@ -30,12 +30,14 @@ git clone https://github.com/DovletEmin/Excalidraw.git
 cd Excalidraw
 ```
 2. Установите зависимости:
+```bash
    yarn install
-   
-3. Запустите проект в режиме разработки:
+ ```
+4. Запустите проект в режиме разработки:
+ ```bash
    npm start
-
-4. Откройте в браузере: http://localhost:3000
+ ```
+6. Откройте в браузере: http://localhost:3000
 
 ## Использование:
   **Создавайте наброски, диаграммы и схемы**
