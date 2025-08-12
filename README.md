@@ -31,12 +31,12 @@ cd Excalidraw
 ```
 2. Установите зависимости:
 ```bash
-   yarn install
- ```
+yarn install
+```
 4. Запустите проект в режиме разработки:
- ```bash
-   npm start
- ```
+```bash
+npm start
+```
 6. Откройте в браузере: http://localhost:3000
 
 ## Использование:
