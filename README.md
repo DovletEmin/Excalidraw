@@ -1,6 +1,5 @@
 # Excalidraw
 
-![Excalidraw Logo](https://raw.githubusercontent.com/excalidraw/excalidraw/main/docs/logo.png)  
 *Простой и интуитивный инструмент для создания рукописных диаграмм и набросков*
 
 ---
