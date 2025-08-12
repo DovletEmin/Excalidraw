@@ -1,3 +1,55 @@
-node_modules
-types
-packege-lock.json
+# Dependency directories
+node_modules/
+
+# Build output folders
+dist/
+build/
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional coverage reports
+coverage/
+
+# Optional testing cache
+jest/
+
+# Temporary folders/files
+*.tmp
+*.temp
+
+# Debug files
+debug.log
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+ehthumbs.db
+Desktop.ini
