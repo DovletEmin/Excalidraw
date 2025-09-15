@@ -14,6 +14,7 @@
 
     display: flex;
     align-items: center;
+    
 
     svg {
       flex: 0 0 auto;
@@ -22,17 +23,26 @@
     .ExcalidrawLogo-icon {
       width: auto;
       color: var(--color-logo-icon);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
     }
 
     .ExcalidrawLogo-text {
-      margin-left: 0.75rem;
+      // margin-left: 0.75rem;
       width: auto;
+      height:auto;
       color: var(--color-logo-text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &.is-xs {
       .ExcalidrawLogo-icon {
         height: var(--logo-icon--xs);
+        
       }
 
       .ExcalidrawLogo-text {
