@@ -35,7 +35,7 @@ yarn install
 ```
 4. Запустите проект в режиме разработки:
 ```bash
-npm start
+yarn start
 ```
 6. Откройте в браузере: http://localhost:3000
 
