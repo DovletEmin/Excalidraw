@@ -19,23 +19,23 @@ const LiveCollaborationTrigger = ({
 
   const showIconOnly = appState.width < 830;
 
-  return (
-    <Button
-      {...rest}
-      className={clsx("collab-button", { active: isCollaborating })}
-      type="button"
-      onSelect={onSelect}
-      style={{ position: "relative", width: showIconOnly ? undefined : "auto" }}
-      title={t("labels.liveCollaboration")}
-    >
-      {showIconOnly ? share : t("labels.share")}
-      {appState.collaborators.size > 0 && (
-        <div className="CollabButton-collaborators">
-          {appState.collaborators.size}
-        </div>
-      )}
-    </Button>
-  );
+  // return (
+  //   <Button
+  //     {...rest}
+  //     className={clsx("collab-button", { active: isCollaborating })}
+  //     type="button"
+  //     onSelect={onSelect}
+  //     style={{ position: "relative", width: showIconOnly ? undefined : "auto" }}
+  //     title={t("labels.liveCollaboration")}
+  //   >
+  //     {showIconOnly ? share : t("labels.share")}
+  //     {appState.collaborators.size > 0 && (
+  //       <div className="CollabButton-collaborators">
+  //         {appState.collaborators.size}
+  //       </div>
+  //     )}
+  //   </Button>
+  // );
 };
 
 export default LiveCollaborationTrigger;
