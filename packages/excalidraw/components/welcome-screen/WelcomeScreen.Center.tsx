@@ -72,21 +72,21 @@ const WelcomeScreenMenuItemLink = ({
   icon?: JSX.Element;
   shortcut?: string | null;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
-  return (
-    <a
-      {...props}
-      className={`welcome-screen-menu-item ${className}`}
-      href={href}
-      target="_blank"
-      rel="noopener"
-    >
-      <WelcomeScreenMenuItemContent icon={icon} shortcut={shortcut}>
-        {children}
-      </WelcomeScreenMenuItemContent>
-    </a>
-  );
+  // return (
+  //   <a
+  //     {...props}
+  //     className={`welcome-screen-menu-item ${className}`}
+  //     href={href}
+  //     target="_blank"
+  //     rel="noopener"
+  //   >
+  //     <WelcomeScreenMenuItemContent icon={icon} shortcut={shortcut}>
+  //       {children}
+  //     </WelcomeScreenMenuItemContent>
+  //   </a>
+  // );
 };
-WelcomeScreenMenuItemLink.displayName = "WelcomeScreenMenuItemLink";
+//WelcomeScreenMenuItemLink.displayName = "WelcomeScreenMenuItemLink";
 
 const Center = ({ children }: { children?: React.ReactNode }) => {
   const { WelcomeScreenCenterTunnel } = useTunnels();
