@@ -247,7 +247,7 @@ export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
 
   return (
     <>
-      <button
+      {/* <button
         className="ToolIcon_type_button"
         data-testid="debug-forward"
         aria-label="Move forward"
@@ -261,8 +261,8 @@ export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
         >
           {TrashIcon}
         </div>
-      </button>
-      <button
+      </button> */}
+      {/* <button
         className="ToolIcon_type_button"
         data-testid="debug-forward"
         aria-label="Move forward"
@@ -276,8 +276,8 @@ export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
         >
           <ArrowheadArrowIcon flip />
         </div>
-      </button>
-      <button
+      </button> */}
+      {/* <button
         className="ToolIcon_type_button"
         data-testid="debug-forward"
         aria-label="Move forward"
@@ -291,8 +291,8 @@ export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
         >
           {CloseIcon}
         </div>
-      </button>
-      <button
+      </button> */}
+      {/* <button
         className="ToolIcon_type_button"
         data-testid="debug-backward"
         aria-label="Move backward"
@@ -306,7 +306,7 @@ export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
         >
           <ArrowheadArrowIcon />
         </div>
-      </button>
+      </button> */}
     </>
   );
 };
