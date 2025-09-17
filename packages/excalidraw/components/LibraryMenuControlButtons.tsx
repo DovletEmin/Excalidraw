@@ -19,17 +19,17 @@ export const LibraryMenuControlButtons = ({
   children?: React.ReactNode;
   className?: string;
 }) => {
-  return (
-    <div
-      className={clsx("library-menu-control-buttons", className)}
-      style={style}
-    >
-      <LibraryMenuBrowseButton
-        id={id}
-        libraryReturnUrl={libraryReturnUrl}
-        theme={theme}
-      />
-      {children}
-    </div>
-  );
+  // return (
+  //   <div
+  //     className={clsx("library-menu-control-buttons", className)}
+  //     style={style}
+  //   >
+  //     <LibraryMenuBrowseButton
+  //       id={id}
+  //       libraryReturnUrl={libraryReturnUrl}
+  //       theme={theme}
+  //     />
+  //     {children}
+  //   </div>
+  // );
 };

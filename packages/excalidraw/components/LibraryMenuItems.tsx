@@ -332,7 +332,7 @@ export default function LibraryMenuItems({
           ) : null}
         </>
 
-        {showBtn && (
+        {/* {showBtn && (
           <LibraryMenuControlButtons
             style={{ padding: "16px 0", width: "100%" }}
             id={id}
@@ -344,7 +344,7 @@ export default function LibraryMenuItems({
               onSelectItems={onSelectItems}
             />
           </LibraryMenuControlButtons>
-        )}
+        )} */}
       </Stack.Col>
     </div>
   );

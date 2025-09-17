@@ -34,7 +34,7 @@ import {
   LassoIcon,
   MoonIcon,
   SunIcon,
-  TrashIcon,
+  // TrashIcon,
   zoomAreaIcon,
   ZoomInIcon,
   ZoomOutIcon,
@@ -91,7 +91,7 @@ export const actionChangeViewBackgroundColor = register({
 export const actionClearCanvas = register({
   name: "clearCanvas",
   label: "labels.clearCanvas",
-  icon: TrashIcon,
+  // icon: TrashIcon,
   trackEvent: { category: "canvas" },
   predicate: (elements, appState, props, app) => {
     return (
