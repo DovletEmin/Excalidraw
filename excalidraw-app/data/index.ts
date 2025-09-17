@@ -1,13 +1,10 @@
-import {
-  compressData,
-  decompressData,
-} from "@excalidraw/excalidraw/data/encode";
+import { decompressData } from "@excalidraw/excalidraw/data/encode";
 import {
   decryptData,
   generateEncryptionKey,
   IV_LENGTH_BYTES,
 } from "@excalidraw/excalidraw/data/encryption";
-import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
+// import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
 import { restore } from "@excalidraw/excalidraw/data/restore";
 import { isInvisiblySmallElement } from "@excalidraw/element";
 import { isInitializedImageElement } from "@excalidraw/element";
@@ -287,12 +284,12 @@ export const exportToBackend = async (
 ): Promise<ExportToBackendResult> => {
   const encryptionKey = await generateEncryptionKey("string");
 
-  const payload = await compressData(
-    new TextEncoder().encode(
-      serializeAsJSON(elements, appState, files, "database"),
-    ),
-    { encryptionKey },
-  );
+  // const payloadd = await compressData(
+  //   new TextEncoder().encode(
+  //     serializeAsJSON(elements, appState, files, "database"),
+  //   ),
+  //   { encryptionKey },
+  // );
 
   try {
     const filesMap = new Map<FileId, BinaryFileData>();
@@ -310,7 +307,7 @@ export const exportToBackend = async (
 
     const response = await fetch(BACKEND_V2_POST, {
       method: "POST",
-      body: payload.buffer,
+      // body: payload.buffer,
     });
     const json = await response.json();
     if (json.id) {
