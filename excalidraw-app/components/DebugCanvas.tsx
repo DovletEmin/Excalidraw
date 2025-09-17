@@ -1,15 +1,10 @@
 import {
-  ArrowheadArrowIcon,
-  CloseIcon,
-  TrashIcon,
-} from "@excalidraw/excalidraw/components/icons";
-import {
   bootstrapCanvas,
   getNormalizedCanvasDimensions,
 } from "@excalidraw/excalidraw/renderer/helpers";
 import { type AppState } from "@excalidraw/excalidraw/types";
 import { throttleRAF } from "@excalidraw/common";
-import { useCallback, useImperativeHandle, useRef } from "react";
+import { useImperativeHandle, useRef } from "react";
 
 import {
   isLineSegment,
@@ -212,38 +207,38 @@ export const isVisualDebuggerEnabled = () =>
   Array.isArray(window.visualDebug?.data);
 
 export const DebugFooter = ({ onChange }: { onChange: () => void }) => {
-  const moveForward = useCallback(() => {
-    if (
-      !window.visualDebug?.currentFrame ||
-      isNaN(window.visualDebug?.currentFrame ?? -1)
-    ) {
-      window.visualDebug!.currentFrame = 0;
-    }
-    window.visualDebug!.currentFrame += 1;
-    onChange();
-  }, [onChange]);
-  const moveBackward = useCallback(() => {
-    if (
-      !window.visualDebug?.currentFrame ||
-      isNaN(window.visualDebug?.currentFrame ?? -1) ||
-      window.visualDebug?.currentFrame < 1
-    ) {
-      window.visualDebug!.currentFrame = 1;
-    }
-    window.visualDebug!.currentFrame -= 1;
-    onChange();
-  }, [onChange]);
-  const reset = useCallback(() => {
-    window.visualDebug!.currentFrame = undefined;
-    onChange();
-  }, [onChange]);
-  const trashFrames = useCallback(() => {
-    if (window.visualDebug) {
-      window.visualDebug.currentFrame = undefined;
-      window.visualDebug.data = [];
-    }
-    onChange();
-  }, [onChange]);
+  // const moveForward = useCallback(() => {
+  //   if (
+  //     !window.visualDebug?.currentFrame ||
+  //     isNaN(window.visualDebug?.currentFrame ?? -1)
+  //   ) {
+  //     window.visualDebug!.currentFrame = 0;
+  //   }
+  //   window.visualDebug!.currentFrame += 1;
+  //   onChange();
+  // }, [onChange]);
+  // const moveBackward = useCallback(() => {
+  //   if (
+  //     !window.visualDebug?.currentFrame ||
+  //     isNaN(window.visualDebug?.currentFrame ?? -1) ||
+  //     window.visualDebug?.currentFrame < 1
+  //   ) {
+  //     window.visualDebug!.currentFrame = 1;
+  //   }
+  //   window.visualDebug!.currentFrame -= 1;
+  //   onChange();
+  // }, [onChange]);
+  // const reset = useCallback(() => {
+  //   window.visualDebug!.currentFrame = undefined;
+  //   onChange();
+  // }, [onChange]);
+  // const trashFrames = useCallback(() => {
+  //   if (window.visualDebug) {
+  //     window.visualDebug.currentFrame = undefined;
+  //     window.visualDebug.data = [];
+  //   }
+  //   onChange();
+  // }, [onChange]);
 
   return (
     <>
