@@ -44,20 +44,20 @@ const WelcomeScreenMenuItem = ({
   icon?: JSX.Element;
   shortcut?: string | null;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
-  return (
-    <button
-      {...props}
-      type="button"
-      className={`welcome-screen-menu-item ${className}`}
-      onClick={onSelect}
-    >
-      <WelcomeScreenMenuItemContent icon={icon} shortcut={shortcut}>
-        {children}
-      </WelcomeScreenMenuItemContent>
-    </button>
-  );
+  // return (
+  //   <button
+  //     {...props}
+  //     type="button"
+  //     className={`welcome-screen-menu-item ${className}`}
+  //     onClick={onSelect}
+  //   >
+  //     <WelcomeScreenMenuItemContent icon={icon} shortcut={shortcut}>
+  //       {children}
+  //     </WelcomeScreenMenuItemContent>
+  //   </button>
+  // );
 };
-WelcomeScreenMenuItem.displayName = "WelcomeScreenMenuItem";
+//WelcomeScreenMenuItem.displayName = "WelcomeScreenMenuItem";
 
 const WelcomeScreenMenuItemLink = ({
   children,
@@ -98,8 +98,8 @@ const Center = ({ children }: { children?: React.ReactNode }) => {
             <Logo />
             <Heading>{t("welcomeScreen.defaults.center_heading")}</Heading>
             <Menu>
-              <MenuItemLoadScene />
-              <MenuItemHelp />
+              {/* <MenuItemLoadScene /> */}
+              {/* <MenuItemHelp /> */}
             </Menu>
           </>
         )}
@@ -135,15 +135,15 @@ Menu.displayName = "Menu";
 const MenuItemHelp = () => {
   const actionManager = useExcalidrawActionManager();
 
-  return (
-    <WelcomeScreenMenuItem
-      onSelect={() => actionManager.executeAction(actionShortcuts)}
-      shortcut="?"
-      icon={HelpIcon}
-    >
-      {t("helpDialog.title")}
-    </WelcomeScreenMenuItem>
-  );
+  // return (
+  //   <WelcomeScreenMenuItem
+  //     onSelect={() => actionManager.executeAction(actionShortcuts)}
+  //     shortcut="?"
+  //     icon={HelpIcon}
+  //   >
+  //     {t("helpDialog.title")}
+  //   </WelcomeScreenMenuItem>
+  // );
 };
 MenuItemHelp.displayName = "MenuItemHelp";
 
@@ -155,15 +155,15 @@ const MenuItemLoadScene = () => {
     return null;
   }
 
-  return (
-    <WelcomeScreenMenuItem
-      onSelect={() => actionManager.executeAction(actionLoadScene)}
-      shortcut={getShortcutFromShortcutName("loadScene")}
-      icon={LoadIcon}
-    >
-      {t("buttons.load")}
-    </WelcomeScreenMenuItem>
-  );
+  // return (
+  //   <WelcomeScreenMenuItem
+  //     onSelect={() => actionManager.executeAction(actionLoadScene)}
+  //     shortcut={getShortcutFromShortcutName("loadScene")}
+  //     icon={LoadIcon}
+  //   >
+  //     {t("buttons.load")}
+  //   </WelcomeScreenMenuItem>
+  // );
 };
 MenuItemLoadScene.displayName = "MenuItemLoadScene";
 
@@ -173,11 +173,11 @@ const MenuItemLiveCollaborationTrigger = ({
   onSelect: () => any;
 }) => {
   const { t } = useI18n();
-  return (
-    <WelcomeScreenMenuItem shortcut={null} onSelect={onSelect} icon={usersIcon}>
-      {t("labels.liveCollaboration")}
-    </WelcomeScreenMenuItem>
-  );
+  // return (
+  //   <WelcomeScreenMenuItem shortcut={null} onSelect={onSelect} icon={usersIcon}>
+  //     {t("labels.liveCollaboration")}
+  //   </WelcomeScreenMenuItem>
+  // );
 };
 MenuItemLiveCollaborationTrigger.displayName =
   "MenuItemLiveCollaborationTrigger";
